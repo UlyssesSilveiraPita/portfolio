@@ -78,5 +78,12 @@
 	<script type="text/javascript">
 		jQuery('#form1').forms({ownerEmail:'#'})
 	</script>
+    <script>
+  const energyBall = document.querySelector(".energy-ball");
+
+  document.addEventListener("mousemove", (e) => {
+    energyBall.style.left = `${e.clientX}px`;
+    energyBall.style.top = `${e.clientY}px`;
+  });
 </body>
 </html>
