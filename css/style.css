@@ -22,6 +22,9 @@
 .wrap {
   overflow: hidden;
 }
+.wrap, p {
+  overflow: auto;
+}
 ._txtLeft {
   text-align: left;
 }
