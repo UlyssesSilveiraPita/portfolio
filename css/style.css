@@ -888,9 +888,9 @@ p {
   font-weight: bold;
 }
 /*Core variables and mixins*/
-.clearfix {
+/*.clearfix {
   *zoom: 1;
-}
+}*/
 .clearfix:before,
 .clearfix:after {
   display: table;
@@ -914,79 +914,4 @@ p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-.fireflies {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 9999; /* força a ficar acima do conteúdo */
-}
-
-.firefly {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background: #00f0ff;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff;
-  opacity: 0.9;
-  animation: floaty 12s infinite ease-in-out, flicker 2s infinite alternate;
-}
-
-/* Movimento suave aleatório */
-@keyframes floaty {
-  0%   { transform: translate(0, 0); }
-  25%  { transform: translate(50px, -80px); }
-  50%  { transform: translate(-70px, 60px); }
-  75%  { transform: translate(100px, -50px); }
-  100% { transform: translate(0, 0); }
-}
-
-/* Brilho piscando */
-@keyframes flicker {
-  0%   { opacity: 0.2; }
-  50%  { opacity: 1; }
-  100% { opacity: 0.3; }
-}
-
-/* Cada um em posição e delay diferentes */
-.firefly:nth-child(1) { top: 20%; left: 15%; animation-delay: 0s, 0s; }
-.firefly:nth-child(2) { top: 50%; left: 70%; animation-delay: 2s, 1s; }
-.firefly:nth-child(3) { top: 80%; left: 40%; animation-delay: 4s, 0.5s; }
-.firefly:nth-child(4) { top: 30%; left: 80%; animation-delay: 6s, 1.5s; }
-.firefly:nth-child(5) { top: 60%; left: 20%; animation-delay: 8s, 0.7s; }
-.firefly:nth-child(6) { top: 10%; left: 60%; animation-delay: 10s, 1.2s; }
-.firefly:nth-child(7) { top: 40%; left: 30%; animation-delay: 12s, 0.3s; }
-.firefly:nth-child(8) { top: 75%; left: 85%; animation-delay: 14s, 0.8s; }
-.firefly:nth-child(9) { top: 90%; left: 10%; animation-delay: 16s, 0.6s; }
-.firefly:nth-child(10){ top: 15%; left: 50%; animation-delay: 12s, 1s; }
-.firefly:nth-child(12){ top: 11%; left: 10%; animation-delay: 4s, 0.3s; }
-.firefly:nth-child(13){ top: 65%; left: 33%; animation-delay: 1s, 0.1s; }
-
-body {
-  cursor: none;
-}
-
-.energy-ball {
-  position: fixed;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #d9ff00 0%, #d9ff00 70%, transparent 100%);
-  box-shadow: 0 0 20px #d9ff00, 0 0 40px #d9ff00, 0 0 80px #d9ff00;
-  pointer-events: none; /* não bloqueia cliques */
-  transform: translate(-50%, -50%);
-  z-index: 99999;
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-/* Efeito pulsando */
-@keyframes pulse {
-  0%   { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
-  50%  { transform: translate(-50%, -50%) scale(1.3); opacity: 1; }
-  100% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
 }
