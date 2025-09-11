@@ -513,7 +513,7 @@ p {
   color: #ffffff;
   text-align: center;
   display: block;
-  background: #000;
+  /*//background: #000;*/
   border-bottom: 1px solid #404040;
 }
 .badge1 .part2 {
