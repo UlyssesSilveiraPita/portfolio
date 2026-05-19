@@ -917,13 +917,13 @@ p {
 }
 .Currículo{
   text-align: center;
-  padding-top: 5px;
-  width: 20%;
-  margin: 1em auto;
+  padding-top: 3px;
+  width: 40%;
+  margin: 1em 10px; /* espaço lateral */
   height: 2em;
   min-width: 100px;
   border-radius: 5px;
-  display: block;
+  display: inline-block; /* importante */
   background: #353535;
   color: #ffffff;
   box-shadow: 0 0 5px #00f0ff, 0 0 5px #00f0ff, 0 0 10px #00f0ff;
