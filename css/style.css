@@ -22,7 +22,8 @@
 .wrap {
   overflow: hidden;
 }
-.wrap, p {
+.wrap,
+p {
   overflow: auto;
 }
 ._txtLeft {
@@ -39,7 +40,11 @@
 }
 /*------ template stylization ------*/
 body {
-  font: 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    14px Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   line-height: 20px;
   color: #ffffff;
   min-width: 1170px;
@@ -111,7 +116,12 @@ footer > .container {
   text-align: center;
 }
 footer .privacy_text {
-  font: 12px/20px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    12px/20px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #ffffff;
   display: inline-block;
   text-transform: uppercase;
@@ -176,7 +186,12 @@ header .navbar > .navbar-inner {
 }
 .sf-menu > li > a .base_text {
   color: #ffffff;
-  font: 12px/89px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    12px/89px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
@@ -186,7 +201,12 @@ header .navbar > .navbar-inner {
 }
 .sf-menu > li > a .over_text {
   color: #000000;
-  font: 12px/89px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    12px/89px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   position: absolute;
@@ -233,7 +253,12 @@ header .navbar > .navbar-inner {
 }
 .sf-menu ul a {
   color: #ffffff;
-  font: 12px/18px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    12px/18px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -291,32 +316,56 @@ header .navbar > .navbar-inner {
   padding: 125px 0 20px 0;
 }
 h2 {
-  font: 30px/30px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    30px/30px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   margin: 0 0 45px 0;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 h3 {
-  font: 20px/25px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    20px/25px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   margin: 0 0 0 0;
 }
 h4 {
-  font: 14px/25px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    14px/25px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #808080;
   text-transform: uppercase;
   margin: 0 0 0 0;
 }
 p {
-  font: 14px/21px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    14px/21px Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #777777;
   margin-bottom: 21px;
 }
 .more_btn1 {
   display: inline-block;
-  font: 700 15px/25px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    700 15px/25px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #ffffff;
   background: none;
   white-space: pre;
@@ -345,7 +394,12 @@ p {
 /*--- content end ------*/
 /*---------------------- LINKS ---------------------------------- */
 ._link1 {
-  font: 12px/20px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    12px/20px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   -webkit-transition: all 0.5s ease;
@@ -358,7 +412,12 @@ p {
   text-decoration: none;
 }
 ._link2 {
-  font: 20px/25px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    20px/25px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   -webkit-transition: all 0.5s ease;
@@ -371,7 +430,11 @@ p {
   text-decoration: none;
 }
 ._link3 {
-  font: 14px/21px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    14px/21px Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #ffffff;
   text-decoration: underline;
   -webkit-transition: all 0.5s ease;
@@ -509,7 +572,12 @@ p {
   margin-right: 45px;
 }
 .badge1 .part1 {
-  font: 35px/63px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    35px/63px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #ffffff;
   text-align: center;
   display: block;
@@ -517,7 +585,12 @@ p {
   border-bottom: 1px solid #404040;
 }
 .badge1 .part2 {
-  font: 15px/30px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    15px/30px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -687,14 +760,24 @@ p {
   margin: 0;
 }
 #slider_simple1 > .slider_set > li .sliderText1 {
-  font: 80px/80px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    80px/80px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   display: inline-block;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
 }
 #slider_simple1 > .slider_set > li .sliderText2 {
-  font: 50px/60px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    50px/60px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   display: inline-block;
   width: 100%;
   color: #808080;
@@ -773,7 +856,11 @@ p {
   width: 100%;
   padding: 10px 20px;
   background: #000;
-  font: 14px/20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    14px/20px Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #777777;
   float: left;
   border: none;
@@ -816,7 +903,11 @@ p {
 }
 #form1 .success > span {
   color: #777;
-  font: 14px/21px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    14px/21px Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   text-align: center;
   width: 100%;
   display: inline-block;
@@ -844,7 +935,11 @@ p {
   border-radius: 0;
   padding: 11px 15px;
   background: #353535;
-  font: 14px/18px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    14px/18px Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #ffffff;
   margin-bottom: 0;
   float: left;
@@ -866,14 +961,23 @@ p {
 }
 .search_list > li {
   margin-bottom: 25px;
-  font: 12px/21px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    12px/21px Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #777777;
 }
 .search_list > li h4 {
   margin: 0;
 }
 .search_list > li h4 > a {
-  font: 20px/25px 'Bitter', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font:
+    20px/25px "Bitter",
+    Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   color: #ffffff;
   text-shadow: none;
   text-decoration: underline;
@@ -915,7 +1019,7 @@ p {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.Currículo{
+.Currículo {
   text-align: center;
   padding-top: 3px;
   width: 40%;
@@ -926,8 +1030,15 @@ p {
   display: inline-block; /* importante */
   background: #353535;
   color: #ffffff;
-  box-shadow: 0 0 5px #00f0ff, 0 0 5px #00f0ff, 0 0 10px #00f0ff;
-  font: 12px/21px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  box-shadow:
+    0 0 5px #00f0ff,
+    0 0 5px #00f0ff,
+    0 0 10px #00f0ff;
+  font:
+    12px/21px Arial,
+    "Helvetica Neue",
+    Helvetica,
+    sans-serif;
   font-size: 14px;
   font-weight: bold;
 }
@@ -949,40 +1060,109 @@ p {
   height: 4px;
   background: #00f0ff;
   border-radius: 50%;
-  box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+  box-shadow:
+    0 0 10px #00f0ff,
+    0 0 20px #00f0ff,
+    0 0 40px #00f0ff;
   opacity: 0.9;
-  animation: floaty 12s infinite ease-in-out, flicker 2s infinite alternate;
+  animation:
+    floaty 12s infinite ease-in-out,
+    flicker 2s infinite alternate;
 }
 
 /* Movimento suave aleatório */
 @keyframes floaty {
-  0%   { transform: translate(0, 0); }
-  25%  { transform: translate(50px, -80px); }
-  50%  { transform: translate(-70px, 60px); }
-  75%  { transform: translate(100px, -50px); }
-  100% { transform: translate(0, 0); }
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50px, -80px);
+  }
+  50% {
+    transform: translate(-70px, 60px);
+  }
+  75% {
+    transform: translate(100px, -50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 /* Brilho piscando */
 @keyframes flicker {
-  0%   { opacity: 0.2; }
-  50%  { opacity: 1; }
-  100% { opacity: 0.3; }
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }
 
 /* Cada um em posição e delay diferentes */
-.firefly:nth-child(1) { top: 20%; left: 15%; animation-delay: 0s, 0s; }
-.firefly:nth-child(2) { top: 50%; left: 70%; animation-delay: 2s, 1s; }
-.firefly:nth-child(3) { top: 80%; left: 40%; animation-delay: 4s, 0.5s; }
-.firefly:nth-child(4) { top: 30%; left: 80%; animation-delay: 6s, 1.5s; }
-.firefly:nth-child(5) { top: 60%; left: 20%; animation-delay: 8s, 0.7s; }
-.firefly:nth-child(6) { top: 10%; left: 60%; animation-delay: 10s, 1.2s; }
-.firefly:nth-child(7) { top: 40%; left: 30%; animation-delay: 12s, 0.3s; }
-.firefly:nth-child(8) { top: 75%; left: 85%; animation-delay: 14s, 0.8s; }
-.firefly:nth-child(9) { top: 90%; left: 10%; animation-delay: 16s, 0.6s; }
-.firefly:nth-child(10){ top: 15%; left: 50%; animation-delay: 12s, 1s; }
-.firefly:nth-child(12){ top: 11%; left: 10%; animation-delay: 4s, 0.3s; }
-.firefly:nth-child(13){ top: 65%; left: 33%; animation-delay: 1s, 0.1s; }
+.firefly:nth-child(1) {
+  top: 20%;
+  left: 15%;
+  animation-delay: 0s, 0s;
+}
+.firefly:nth-child(2) {
+  top: 50%;
+  left: 70%;
+  animation-delay: 2s, 1s;
+}
+.firefly:nth-child(3) {
+  top: 80%;
+  left: 40%;
+  animation-delay: 4s, 0.5s;
+}
+.firefly:nth-child(4) {
+  top: 30%;
+  left: 80%;
+  animation-delay: 6s, 1.5s;
+}
+.firefly:nth-child(5) {
+  top: 60%;
+  left: 20%;
+  animation-delay: 8s, 0.7s;
+}
+.firefly:nth-child(6) {
+  top: 10%;
+  left: 60%;
+  animation-delay: 10s, 1.2s;
+}
+.firefly:nth-child(7) {
+  top: 40%;
+  left: 30%;
+  animation-delay: 12s, 0.3s;
+}
+.firefly:nth-child(8) {
+  top: 75%;
+  left: 85%;
+  animation-delay: 14s, 0.8s;
+}
+.firefly:nth-child(9) {
+  top: 90%;
+  left: 10%;
+  animation-delay: 16s, 0.6s;
+}
+.firefly:nth-child(10) {
+  top: 15%;
+  left: 50%;
+  animation-delay: 12s, 1s;
+}
+.firefly:nth-child(12) {
+  top: 11%;
+  left: 10%;
+  animation-delay: 4s, 0.3s;
+}
+.firefly:nth-child(13) {
+  top: 65%;
+  left: 33%;
+  animation-delay: 1s, 0.1s;
+}
 
 body {
   cursor: none;
@@ -993,8 +1173,16 @@ body {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: radial-gradient(circle, #d9ff00 0%, #d9ff00 70%, transparent 100%);
-  box-shadow: 0 0 20px #d9ff00, 0 0 40px #d9ff00, 0 0 80px #d9ff00;
+  background: radial-gradient(
+    circle,
+    #d9ff00 0%,
+    #d9ff00 70%,
+    transparent 100%
+  );
+  box-shadow:
+    0 0 20px #d9ff00,
+    0 0 40px #d9ff00,
+    0 0 80px #d9ff00;
   pointer-events: none; /* não bloqueia cliques */
   transform: translate(-50%, -50%);
   z-index: 99999;
@@ -1003,8 +1191,54 @@ body {
 
 /* Efeito pulsando */
 @keyframes pulse {
-  0%   { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
-  50%  { transform: translate(-50%, -50%) scale(1.3); opacity: 1; }
-  100% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
 }
 
+/* Botao de idioma */
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 16px;
+  vertical-align: top;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: 0.25s ease;
+}
+
+.lang-btn img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: block;
+}
+
+.lang-btn:hover {
+  opacity: 1;
+  transform: scale(1.12);
+}
+.lang-btn.active {
+  opacity: 1 !important;
+  transform: scale(1.12);
+}
+.lang-btn.lang-selected {
+  opacity: 1 !important;
+  transform: scale(1.12) !important;
+}
