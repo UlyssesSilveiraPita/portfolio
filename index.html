@@ -40,7 +40,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body class="home-page">
     <div class="fireflies">
       <div class="firefly"></div>
       <div class="firefly"></div>
@@ -183,6 +183,132 @@
           </div>
         </section>
       </div>
+      <!--featured projects home-->
+      <div id="featured-projects" class="home-projects">
+        <div class="container">
+          <h2>Projetos em Destaque</h2>
+          <p>
+            Alguns dos principais projetos desenvolvidos com Unity, C# e
+            sistemas de gameplay.
+          </p>
+          <div class="home-project-card">
+            <h2 class="home-project-title">RPG Adventure</h2>
+            <div class="home-project-content">
+              <div class="home-project-video">
+                <video controls preload="metadata">
+                  <source src="videos/rpg-adventure.mp4" type="video/mp4" />
+                  Seu navegador não suporta vídeo.
+                </video>
+              </div>
+              <div class="home-project-info">
+                <h3>RPG Adventure</h3>
+                <p>
+                  Projeto autoral desenvolvido em Unity com foco em gameplay
+                  moderno, exploração, combate, movimentação avançada e
+                  inteligência artificial para inimigos.
+                </p>
+                <h4>Tecnologias</h4>
+                <ul>
+                  <li>✓ Unity 6</li>
+                  <li>✓ C#</li>
+                  <li>✓ Enemy AI</li>
+                  <li>✓ NavMesh</li>
+                  <li>✓ Character Controller</li>
+                  <li>✓ Bow System</li>
+                  <li>✓ Combat System</li>
+                  <li>✓ Inventory</li>
+                  <li>✓ Save System</li>
+                </ul>
+                <div class="home-project-buttons">
+                  <a
+                    href="https://github.com/UlyssesSilveiraPita/Sistema-de-IA-inspirado-em-GOAP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                  <a href="#" target="_blank">Itch.io</a>
+                  <a href="#" target="_blank">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-project-card">
+            <h2 class="home-project-title">Yokai killer shuten douji</h2>
+            <div class="home-project-content">
+              <div class="home-project-video">
+                <video controls preload="metadata">
+                  <source src="videos/yokaikiller.mp4" type="video/mp4" />
+                  Seu navegador não suporta vídeo.
+                </video>
+              </div>
+              <div class="home-project-info">
+                <h3>Yokai Killer</h3>
+                <p>
+                  Yokai Killer é um jogo de ação e aventura inspirado no
+                  folclore japonês, no qual os jogadores enfrentam criaturas
+                  sobrenaturais (Yōkai) em um mundo estilizado. O projeto foi
+                  apresentado na Brazil Game Show (BGS), representando um marco
+                  importante na minha trajetória no desenvolvimento de jogos.
+                </p>
+                <h4>Tecnologias</h4>
+                <ul>
+                  <li>✓ Unity 6</li>
+                  <li>✓ C#</li>
+                  <li>✓ Gameplay Programming</li>
+                  <li>✓ Enemy AI</li>
+                  <li>✓ Combat System</li>
+                  <li>✓ UI System</li>
+                  <li>✓ Pixel Art / 2D Art</li>
+                </ul>
+                <div class="home-project-buttons">
+                  <a href="#" target="_blank">GitHub</a>
+                  <a href="#" target="_blank">Itch.io</a>
+                  <a href="#" target="_blank">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-project-card">
+            <h2 class="home-project-title">Fox Adventure</h2>
+            <div class="home-project-content">
+              <div class="home-project-video">
+                <video controls preload="metadata" playsinline>
+                  <source src="videos/foxadventure.mp4" type="video/mp4" />
+                  Seu navegador não suporta vídeo.
+                </video>
+              </div>
+              <div class="home-project-info">
+                <h3>Fox Adventure</h3>
+                <p>
+                  Fox Adventure é um jogo de plataforma 2D desenvolvido na
+                  Unity, focado na movimentação fluida do personagem, na
+                  exploração e em uma jogabilidade responsiva. O projeto combina
+                  mecânicas clássicas de plataforma com sistemas modernos de
+                  movimentação, proporcionando uma experiência de jogo refinada
+                  e agradável.
+                </p>
+                <h4>Tecnologias</h4>
+                <ul>
+                  <li>✓ Unity 6</li>
+                  <li>✓ C#</li>
+                  <li>✓ 2D Platformer</li>
+                  <li>✓ Enemy AI</li>
+                  <li>✓ Collectibles</li>
+                  <li>✓ Animation</li>
+                  <li>✓ UI System</li>
+                </ul>
+                <div class="home-project-buttons">
+                  <a href="#" target="_blank">GitHub</a>
+                  <a href="#" target="_blank">Itch.io</a>
+                  <a href="#" target="_blank">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--featured projects home end-->
       <!--footer-->
       <footer>
         <div class="container">
@@ -225,6 +351,52 @@
       });
     </script>
     <script src="js/language.js"></script>
+    <script>
+      function toggleHomeProjects() {
+        const section = document.getElementById("featured-projects");
+        const footer = document.querySelector("footer");
+
+        if (!section || !footer) return;
+
+        const hash = window.location.hash;
+        const search = window.location.search;
+        const page = window.location.pathname.split("/").pop();
+
+        const currentUrl = page + search + hash;
+
+        const isHome =
+          (page === "index.html" || page === "") &&
+          (hash === "" || hash === "#") &&
+          (search === "" || search === "?");
+
+        const needsScrollFooter =
+          isHome ||
+          currentUrl.includes("index-1.html") ||
+          currentUrl.includes("index-2.html");
+
+        section.style.display = isHome ? "block" : "none";
+
+        footer.classList.remove("home-footer-scroll");
+        footer.classList.remove("scroll-page-footer");
+
+        if (isHome) {
+          footer.classList.add("home-footer-scroll");
+        } else if (
+          currentUrl.includes("index-1.html") ||
+          currentUrl.includes("index-2.html")
+        ) {
+          footer.classList.add("scroll-page-footer");
+        }
+      }
+
+      window.addEventListener("load", toggleHomeProjects);
+      window.addEventListener("hashchange", toggleHomeProjects);
+      window.addEventListener("popstate", toggleHomeProjects);
+
+      document.addEventListener("click", function () {
+        setTimeout(toggleHomeProjects, 100);
+      });
+    </script>
     <!-- coded by Coder Shin -->
   </body>
 </html>

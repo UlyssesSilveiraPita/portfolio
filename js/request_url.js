@@ -29,10 +29,14 @@ if (location.protocol != "file:") {
     fileName === "";
 
   if (isHtmlPage && !hasRoute && !isMainPage) {
-    document.location.href =
-      siteHref.slice(0, siteHref.lastIndexOf("/")) +
-      hashString +
-      siteHref.slice(siteHref.lastIndexOf("/") + 1);
+    var targetPage = siteHref.slice(siteHref.lastIndexOf("/") + 1);
+var basePage = targetPage.indexOf("-en.html") !== -1 ? "index-en.html" : "";
+
+document.location.href =
+  siteHref.slice(0, siteHref.lastIndexOf("/") + 1) +
+  basePage +
+  hashString +
+  targetPage;
   } else {
     document.write(
       '<script type="text/javascript" src="js/history.min.js?type=/&redirect=true&basepath=' +

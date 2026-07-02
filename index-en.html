@@ -40,7 +40,7 @@
     <![endif]-->
   </head>
 
-  <body class="en-page">
+  <body class="home-page english-site">
     <div class="fireflies">
       <div class="firefly"></div>
       <div class="firefly"></div>
@@ -166,7 +166,127 @@
           </div>
         </section>
       </div>
+      <!--featured projects home-->
+      <div id="featured-projects" class="home-projects">
+        <div class="container">
+          <h2>Featured Projects</h2>
+          <p>
+             Some of my main projects developed with Unity, C# and gameplay systems.
+          </p>
+          <div class="home-project-card">
+            <h2 class="home-project-title">RPG Adventure</h2>
+            <div class="home-project-content">
+              <div class="home-project-video">
+                <video controls preload="metadata">
+                  <source src="videos/rpg-adventure.mp4" type="video/mp4" />
+                  Seu navegador não suporta vídeo.
+                </video>
+              </div>
+              <div class="home-project-info">
+                <h3>RPG Adventure</h3>
+                <p>
+                  Personal project developed in Unity focused on modern gameplay, exploration,
+                  combat, advanced movement and enemy artificial intelligence.
+                </p>
+                <h4>Technologies</h4>
+                <ul>
+                  <li>✓ Unity 6</li>
+                  <li>✓ C#</li>
+                  <li>✓ Enemy AI</li>
+                  <li>✓ NavMesh</li>
+                  <li>✓ Character Controller</li>
+                  <li>✓ Bow System</li>
+                  <li>✓ Combat System</li>
+                  <li>✓ Inventory</li>
+                  <li>✓ Save System</li>
+                </ul>
+                <div class="home-project-buttons">
+                  <a href="https://github.com/UlyssesSilveiraPita/Sistema-de-IA-inspirado-em-GOAP"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      GitHub
+                  </a>
+                  <a href="#" target="_blank">Itch.io</a>
+                  <a href="#" target="_blank">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-project-card">
+            <h2 class="home-project-title">Yokai killer shuten douji</h2>
+            <div class="home-project-content">
+              <div class="home-project-video">
+                <video controls preload="metadata">
+                  <source src="videos/yokaikiller.mp4" type="video/mp4" />
+                  Seu navegador não suporta vídeo.
+                </video>
+              </div>
+              <div class="home-project-info">
+                <h3>Yokai Killer</h3>
+                <p>
+                  Yokai Killer is an action-adventure game inspired by Japanese folklore, 
+                  where players face supernatural creatures (Yōkai) in a stylized world. 
+                  The project was showcased at Brazil Game Show (BGS), representing an 
+                  important milestone in my game development journey.
+                </p>
+                <h4>Technologies</h4>
+                <ul>
+                  <li>✓ Unity 6</li>
+                  <li>✓ C#</li>
+                  <li>✓ Gameplay Programming</li>
+                  <li>✓ Enemy AI</li>
+                  <li>✓ Combat System</li>
+                  <li>✓ UI System</li>
+                  <li>✓ Pixel Art / 2D Art</li>
+                </ul>
+                <div class="home-project-buttons">
+                  <a href="#" target="_blank">GitHub</a>
+                  <a href="#" target="_blank">Itch.io</a>
+                  <a href="#" target="_blank">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-project-card">
+            <h2 class="home-project-title">Fox Adventure</h2>
+            <div class="home-project-content">
+              <div class="home-project-video">
+              <video controls preload="metadata" playsinline>
+              <source src="videos/foxadventure.mp4" type="video/mp4">
+              Seu navegador não suporta vídeo.
+              </video>
+              </div>
+              <div class="home-project-info">
+                <h3>Fox Adventure</h3>
+                <p>
+                  Fox Adventure is a 2D platformer developed in Unity, 
+                  focused on fluid character movement, exploration, and responsive gameplay. 
+                  The project features classic platforming mechanics combined with 
+                  modern movement systems, providing a polished and enjoyable player experience.
+                </p>
+                <h4>Technologies</h4>
+                <ul>
+                  <li>✓ Unity 6</li>
+                  <li>✓ C#</li>
+                  <li>✓ 2D Platformer</li>
+                  <li>✓ Enemy AI</li>
+                  <li>✓ Collectibles</li>
+                  <li>✓ Animation</li>
+                  <li>✓ UI System</li>
+                </ul>
+                <div class="home-project-buttons">
+                  <a href="#" target="_blank">GitHub</a>
+                  <a href="#" target="_blank">Itch.io</a>
+                  <a href="#" target="_blank">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--featured projects home end-->
       <!--footer-->
+      <div id="footer-spacer"></div>
       <footer>
         <div class="container">
           <div class="privacy_text">
@@ -208,6 +328,134 @@
       });
     </script>
     <script src="js/language.js"></script>
+    <script>
+  function toggleHomeProjects() {
+    const spacer = document.getElementById("footer-spacer");
+    const section = document.getElementById("featured-projects");
+    const footer = document.querySelector("footer");
+    const wrapper = document.getElementById("wrapper");
+
+    if (!section || !footer || !wrapper) return;
+
+    const url = window.location.href.toLowerCase();
+
+    const isHome =
+      url.includes("index-en.html") &&
+      !url.includes("index-1-en") &&
+      !url.includes("index-2-en") &&
+      !url.includes("index-3-en") &&
+      !url.includes("index-4-en") &&
+      !url.includes("index-6-en");
+
+    const isScrollPage =
+  document.querySelector("a.activeLink")?.getAttribute("href") === "index-1-en.html" ||
+  document.querySelector("a.activeLink")?.getAttribute("href") === "index-2-en.html";
+
+    section.style.display = isHome ? "block" : "none";
+
+    footer.classList.remove("home-footer-scroll");
+    footer.classList.remove("scroll-page-footer");
+
+    footer.style.marginTop = "";
+
+    wrapper.style.overflow = "";
+    wrapper.style.height = "";
+
+    if (isHome) {
+      footer.classList.add("home-footer-scroll");
+    }
+    
+    if (spacer) {
+  spacer.style.height = "0px";
+}
+
+if (isScrollPage) {
+  wrapper.style.overflow = "visible";
+  wrapper.style.height = "auto";
+
+  footer.classList.add("scroll-page-footer");
+  footer.style.position = "relative";
+  footer.style.bottom = "auto";
+
+  if (spacer) {
+    spacer.style.height = url.includes("index-2-en") ? "700px" : "500px";
+  }
+}
+
+    if (isScrollPage) {
+  wrapper.style.overflow = "visible";
+  wrapper.style.height = "auto";
+  footer.classList.add("scroll-page-footer");
+
+  const activePage = document.querySelector("a.activeLink")?.getAttribute("href");
+
+if (activePage === "index-1-en.html") {
+  footer.style.marginTop = "760px";
+}
+
+if (activePage === "index-2-en.html") {
+  footer.style.marginTop = "900px";
+}
+}
+
+    document.body.classList.toggle("en-inner-page", isScrollPage);
+  }
+
+  window.addEventListener("load", toggleHomeProjects);
+  window.addEventListener("hashchange", toggleHomeProjects);
+  window.addEventListener("popstate", toggleHomeProjects);
+
+  document.addEventListener("click", function () {
+    setTimeout(toggleHomeProjects, 500);
+  });
+</script>
+<script>
+  function toggleHomeProjects() {
+    const section = document.getElementById("featured-projects");
+    const footer = document.querySelector("footer");
+    const wrapper = document.getElementById("wrapper");
+
+    if (!section || !footer || !wrapper) return;
+
+    const activePage = document
+      .querySelector("a.activeLink")
+      ?.getAttribute("href");
+
+    const isHome = !activePage || activePage === "index-en.html";
+
+    const isScrollPage =
+      activePage === "index-1-en.html" ||
+      activePage === "index-2-en.html";
+
+    section.style.display = isHome ? "block" : "none";
+
+    footer.classList.remove("home-footer-scroll");
+    footer.classList.remove("scroll-page-footer");
+    footer.classList.remove("footer-en-adjust");
+
+    wrapper.style.overflow = "";
+    wrapper.style.height = "";
+
+    if (isHome) {
+      footer.classList.add("home-footer-scroll");
+    }
+
+    if (isScrollPage) {
+      wrapper.style.overflow = "visible";
+      wrapper.style.height = "auto";
+      footer.classList.add("scroll-page-footer");
+      footer.classList.add("footer-en-adjust");
+    }
+  }
+
+  window.addEventListener("load", toggleHomeProjects);
+  window.addEventListener("hashchange", toggleHomeProjects);
+  window.addEventListener("popstate", toggleHomeProjects);
+
+  document.addEventListener("click", function () {
+    setTimeout(toggleHomeProjects, 500);
+  });
+</script>
     <!-- coded by Coder Shin -->
   </body>
 </html>
